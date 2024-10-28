@@ -45,7 +45,7 @@ def parse_date(date_str):
         date = datetime.fromisoformat(date_str.replace("Z", "+00:00"))  # Adjust for 'Z' timezone if present
         return date.strftime("%Y-%m-%d")
     except ValueError:
-        print("Error: Invalid date format. Please provide an ISO 8601 date.")
+        print(f"Error: Invalid date format. Please provide an ISO 8601 date. input: <{date_str}>")
         sys.exit(1)
 
 if __name__ == "__main__":
