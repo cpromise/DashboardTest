@@ -1,6 +1,5 @@
 import json
 import sys
-from dateutil import parser
 from utils import path_from_repo
 
 FILE_PATH = path_from_repo("/src/variables/appcenter_payload.json")
@@ -39,12 +38,8 @@ def update_or_append(file_path, new_record):
     print(f"Record updated/appended successfully in {file_path}.")
 
 def parse_date(date_str):
-    dt = parser.isoparse(date_str)
-    year = dt.year
-    month = dt.month
-    day = dt.day
-
-    return f"{year}-{month:02d}-{day:02d}"
+    date_part = date_str.split("T")[0]
+    return date_part
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
