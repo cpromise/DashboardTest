@@ -1,6 +1,6 @@
 import json
 import sys
-from datetime import datetime
+from dateutil import parser
 from utils import path_from_repo
 
 FILE_PATH = path_from_repo("/src/variables/appcenter_payload.json")
@@ -39,14 +39,12 @@ def update_or_append(file_path, new_record):
     print(f"Record updated/appended successfully in {file_path}.")
 
 def parse_date(date_str):
-    """Parse an ISO 8601 date and convert it to yyyy-mm-dd format."""
-    try:
-        # Parse the date and return in yyyy-mm-dd format
-        date = datetime.fromisoformat(date_str.replace("Z", "+00:00"))  # Adjust for 'Z' timezone if present
-        return date.strftime("%Y-%m-%d")
-    except ValueError:
-        print(f"Error: Invalid date format. Please provide an ISO 8601 date. input: <{date_str}>")
-        sys.exit(1)
+    dt = parser.isoparse(date_str)
+    year = dt.year
+    month = dt.month
+    day = dt.day
+
+    return f"{year}-{month:02d}-{day:02d}"
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
@@ -66,11 +64,13 @@ if __name__ == "__main__":
         print("Error: Either size or duration must be provided.")
         sys.exit(1)
 
+    size_megabyte = size / 1_000_000
+    size_megabyte = round(size_megabyte, 1)
     new_record = {
         "date": parse_date(date),
         "sha": sha,
         "url": url,
-        "size": size,
+        "size": size_megabyte,
         "time": duration
     }
 
