@@ -54,5 +54,12 @@
         "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 277,
         "size": 462.8
+    },
+    {
+        "date": "2024-10-28",
+        "sha": "173f31426ee708e8241393858484ac4fc5d68b47",
+        "url": "https://kode2.onkakao.net/%40dj/download/d85b0dab-86d4-4542-ac52-eb7a3efc10ec/jobs/Sandbox_CI/artifacts/SandboxTalk-11.1.2%282024.10.2.1%29.ipa",
+        "size": 66741882,
+        "time": null
     }
 ]
