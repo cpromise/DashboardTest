@@ -64,11 +64,13 @@ if __name__ == "__main__":
         print("Error: Either size or duration must be provided.")
         sys.exit(1)
 
+    size_megabyte = size / 1_000_000
+    size_megabyte = round(size_megabyte, 1)
     new_record = {
         "date": parse_date(date),
         "sha": sha,
         "url": url,
-        "size": size,
+        "size": size_megabyte,
         "time": duration
     }
 
