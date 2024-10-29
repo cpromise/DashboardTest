@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.daumkakao.com/pages/kakaotalk-iphone-dev/TalkiOSDashboard/",
+  "homepage": "https://cpromise.github.io/DashboardTest/",
   "name": "horizon-ui-chakra",
   "version": "2.0.0",
   "private": true,
@@ -17,7 +17,9 @@
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "apexcharts": "3.50.0",
+    "axios": "^1.7.7",
     "framer-motion": "^11.3.7",
+    "http-proxy-middleware": "^3.0.3",
     "npm-force-resolutions": "^0.0.10",
     "react": "18.3.1",
     "react-apexcharts": "1.4.1",

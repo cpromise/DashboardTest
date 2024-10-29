@@ -9,12 +9,38 @@ import {
   // extendTheme
 } from '@chakra-ui/react';
 import initialTheme from './theme/theme'; //  { themeGreen }
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 // Chakra imports
 
 export default function Main() {
   // eslint-disable-next-line
   const [currentTheme, setCurrentTheme] = useState(initialTheme);
+
+  useEffect(() => {
+    async function fetchdata() {
+      // GET 요청
+      // var url = 'https://jsonplaceholder.typicode.com/users';
+      var url = '/public_data.json';
+      axios({
+        method: 'get',
+        url: url,
+        headers: { 
+          Authorization: 'token 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'
+        }
+      })
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+    }
+
+    fetchdata();
+  }, []);
+  
   return (
     <ChakraProvider theme={currentTheme}>
       <Routes>
