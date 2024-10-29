@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     date = sys.argv[1]
     sha = sys.argv[2]
-    url = sys.argv[3]
+    appcenter = sys.argv[3]
     
     # Attempt to parse optional fields if provided
     size = int(sys.argv[4]) if len(sys.argv) > 4 and sys.argv[4] else None
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     new_record = {
         "date": parse_date(date),
         "sha": sha,
-        "url": url,
+        "appcenter": appcenter,
         "size": size_megabyte,
         "time": duration
     }

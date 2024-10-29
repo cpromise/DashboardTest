@@ -2,70 +2,70 @@
     {
         "date": "2024-10-18",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 275,
         "size": 468.5
     },
     {
         "date": "2024-10-19",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 272,
         "size": 464.1
     },
     {
         "date": "2024-10-20",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 272,
         "size": 466.8
     },
     {
         "date": "2024-10-21",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 261,
         "size": 465.9
     },
     {
         "date": "2024-10-22",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 256,
         "size": 466.1
     },
     {
         "date": "2024-10-23",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 266,
         "size": 466.8
     },
     {
         "date": "2024-10-24",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 281,
         "size": 467.2
     },
     {
         "date": "2024-10-25",
         "sha": "5dadb1bc702a6f8b033b60c9249d7f7d1513ebe1",
-        "appcenter": "89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/36719",
         "time": 277,
         "size": 462.8
     },
     {
         "date": "2024-10-28",
         "sha": "e3995d28988eff7ca47787056e71fe4f491e34ab",
-        "url": "https://kode.onkakao.net/%40dj/download/63123b06-775a-4dc3-bb9d-a7a27fae8b78/jobs/Sandbox_CI/artifacts/SandboxTalk-11.2.0%282024.10.23.1%29.ipa",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/37023",
         "size": 255.9,
         "time": null
     },
     {
         "date": "2024-10-29",
         "sha": "250c2020c9a8c5d59a4a042a832ffdb311aef7fe",
-        "url": "https://kode.onkakao.net/%40dj/download/f43fc2ce-67b3-4fba-bd53-3bdb7abab189/jobs/CBT_CI/artifacts/InhouseTalk-11.2.0%282024.10.23.1%29.ipa",
+        "appcenter": "https://appcenter.onkakao.net/apps/89e39353-0100-458a-9174-7318aa183c5b/releases/37073",
         "size": 254.5,
         "time": null
     }
