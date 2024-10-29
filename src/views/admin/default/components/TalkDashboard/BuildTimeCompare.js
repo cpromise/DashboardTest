@@ -47,7 +47,7 @@ import {
     const iconColor = useColorModeValue("brand.500", "white");
     const bgButton = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
     const commitLink = 'https://github.daumkakao.com/kakaotalk-iphone-dev/KakaoTalk-Iphone/commit/' + recentBuildInfo.sha;
-    const appcenterLink = 'https://appcenter.onkakao.net/apps/' + recentBuildInfo.appcenter;
+    const appcenterLink = recentBuildInfo.appcenter;
     const bgHover = useColorModeValue(
       { bg: "secondaryGray.400" },
       { bg: "whiteAlpha.50" }
