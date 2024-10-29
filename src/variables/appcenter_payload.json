@@ -61,5 +61,12 @@
         "url": "https://kode.onkakao.net/%40dj/download/63123b06-775a-4dc3-bb9d-a7a27fae8b78/jobs/Sandbox_CI/artifacts/SandboxTalk-11.2.0%282024.10.23.1%29.ipa",
         "size": 255.9,
         "time": null
+    },
+    {
+        "date": "2024-10-29",
+        "sha": "250c2020c9a8c5d59a4a042a832ffdb311aef7fe",
+        "url": "https://kode.onkakao.net/%40dj/download/f43fc2ce-67b3-4fba-bd53-3bdb7abab189/jobs/CBT_CI/artifacts/InhouseTalk-11.2.0%282024.10.23.1%29.ipa",
+        "size": 254.5,
+        "time": null
     }
 ]
