@@ -1,35 +1,33 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const MyComponent = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const headers = {
-      'Access-Control-Allow-Origin': '*',
-      'Authorization': 'token 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',
-    };
-
-    // Fetch the JSON data when the component mounts with headers
-    fetch('/public_data.json', {
-      method: 'GET', // Optional, defaults to 'GET'
-      headers: headers,
-    })
-      .then((response) => {
-        if (!response.ok) {
-          console.log("fetch error");
-          throw new Error('Network response was not ok');
+    async function fetchdata() {
+      // GET 요청
+      // var url = 'https://jsonplaceholder.typicode.com/users';
+      var url = '/public_data.json';
+      axios({
+        method: 'get',
+        url: url,
+        headers: { 
+          Authorization: 'token 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'
         }
-        console.log("response ", response);
-        return response.json();
       })
-      .then((jsonData) => {
-        setData(jsonData);
+      .then((res) => {
+        console.log(res.data);
+        setData(res.data);
       })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
+      .catch((err) => {
+        console.error(err);
       });
-  }, []); // Empty dependency array to run only once on mount
+    }
 
+    fetchdata();
+  }, []);
+  
   if (!data) {
     return <div>Loading...</div>; // Show a loading message while data is being fetched
   }
